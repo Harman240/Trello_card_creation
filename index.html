@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Cards</title>
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="modal">
+      <h1>Create a new Card with this form in TRELLO</h1>
+      <hr />
+      <!-- Creating a Form -->
+      <form action="" method="POST" name="form">
+        <div class="container-modal">
+          <label for="name"> Name: </label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter Name"
+            required
+          /><br />
+          <label for="name"> Description: </label>
+          <input
+            type="text"
+            name="description"
+            placeholder="Enter Description"
+          /><br />
+          <label for="due_date">Due Date:</label>
+          <input type="date" name="due_date" required id="" />
+          <label for="start_date">Start Date:</label>
+          <input type="date" name="start_date" required id="" />
+          <button type="submit" class="submitbtn">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- linking js file -->
+    <script src="index.js"></script>
+  </body>
+</html>
